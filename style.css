@@ -1,0 +1,217 @@
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+h1 {
+    text-align: center;
+}
+.main_title {
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.title_two {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+section.table {
+    margin-bottom: 46px;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+h2 {
+    padding-left: 30px;
+    border: 1px solid white;
+    border-top: none;
+    padding-bottom: 20px;
+    border-left: none;
+    border-right: none;
+}
+.smile {
+    margin-bottom: 46px;
+    margin-top: 20px;
+}
+p.text {
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+.form {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box {
+    height: 25px;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.button_frame {
+    border-bottom: 1px solid black;
+    padding: 0px 0px 30px 0px;
+    
+}
+input.button {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 35px;
+    border: none;
+    padding: 5px 40px 5px 40px;
+    border-radius: 30px;
+}
+.title_register {
+    font-size: 17px;
+    text-align: center;
+    padding: 0px;
+}
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+h3 {
+    padding-left: 30px;
+    margin: 0px 0px 5px 0px;
+}
+.data {
+    margin: 0px 0px 20px 0px;
+    padding-left: 30px;
+}
+li {
+    padding: 5px 0px;
+}
+.location {
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+h3.limit_title {
+    margin-bottom: -10px;
+}
+p {
+    padding-left: 20px;
+    
+}
+.limit_title {
+   margin-bottom: 0px;
+   
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.part_one {
+    color: white;
+    background-color: rgb(40, 39, 39);
+    width: 800px;
+    height: 1000px;
+}
+.common_part {
+    display: flex;
+}.part_two {
+    background-color: rgb(228, 213, 195);
+}
